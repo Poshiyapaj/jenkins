@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Login page</title>
+<head>
+  <title>Simple Login</title>
 </head>
 <body>
-        <h2>Give appropriate username and password.</h2>
-        <form action="Welcome.html" method="get">
-    <label for="username">Username:</label>
-    <input type="text" id="username" required>
-    
-    <label for="password">Password:</label>
-    <input type="password" id="password" required>
-    
-    <button type="submit">Login!</button>
+
+  <h2>Login</h2>
+
+  <form action="/login" method="post">
+  <label>Username:</label><br>
+  <input type="text" name="username"><br><br>
+
+  <label>Password:</label><br>
+  <input type="password" name="password"><br><br>
+
+  <button type="submit">Login</button>
 </form>
-        <script src="/static/valid.js"></script>
+
+
 </body>
 </html>
