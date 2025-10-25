@@ -6,16 +6,15 @@
 trigger:
 - master
 
-pool: 
-  name: test
+pool: test
 
 steps:
-- task: Maven@4
+- task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.21'
+    jdkVersionOption: '21'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
