@@ -9,7 +9,7 @@ trigger:
 pool: test
 
 steps:
-- task: Maven@3
+- task: Maven@2
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
