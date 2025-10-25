@@ -10,7 +10,7 @@ pool:
  name: test
 
 steps:
-- task: Maven@4
+- task: Maven@2
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
